@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- Ejemplo correcto si tu carpeta se llama exactamente "Css" (C mayúscula) -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloformulario.css">
+    
+    <!-- Scripts -->
+    <script src="javascript/cv.js" defer></script>
+    <script src="javascript/respuestas.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="https://yt3.ggpht.com/yti/ANjgQV-TbMBT-NI-A6CFI1YOlNHz2Vl4WK170n8cFYwg7izNAA=s108-c-k-c0x00ffffff-no-rj">
+</head>
+<body>
+    <section class="form-container">
+        <h2 class="form-title">📊 Opinión sobre mi CV</h2>
+
+        <form id="cvForm" class="formulario">
+            <div class="form-group">
+                <label>¿Cuál es tu perfil?</label>
+                <select name="perfil" class="input">
+                    <option>Reclutador / RRHH</option>
+                    <option>Profesional Tech</option>
+                    <option>Estudiante</option>
+                    <option>Profesor</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+
+            <!-- Área -->
+            <div class="form-group">
+                <label>¿En qué área trabajas?</label>
+                <select name="area" class="input">
+                    <option>Desarrollo de software</option>
+                    <option>Ciencia de datos / IA</option>
+                    <option>Bases de datos</option>
+                    <option>Redes / Infraestructura</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+
+            <!-- Experiencia -->
+            <div class="form-group">
+                <label>Años de experiencia</label>
+                <select name="experiencia" class="input">
+                    <option>0-1</option>
+                    <option>1-3</option>
+                    <option>3-5</option>
+                    <option>5-10</option>
+                    <option>10+</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <h3 class="section-title">⭐ Evaluación del CV</h3>
+
+            <div class="form-group">
+                <label>Claridad del CV</label>
+                <select name="claridad" class="input">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Diseño visual</label>
+                <select name="diseno" class="input">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Nivel técnico percibido</label>
+                <select name="nivel" class="input">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Organización de la información</label>
+                <select name="organizacion" class="input">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Interés en los proyectos</label>
+                <select name="proyectos" class="input">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <h3 class="section-title">💼 Evaluación profesional</h3>
+
+            <div class="form-group">
+                <label>¿Qué probabilidad hay de llamarme para una entrevista?</label>
+                <select name="entrevista" class="input">
+                    <option value="1">Muy baja</option>
+                    <option value="2">Baja</option>
+                    <option value="3">Media</option>
+                    <option value="4">Alta</option>
+                    <option value="5">Muy alta</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>¿Qué sección fue la más fuerte?</label>
+                <select name="fuerte" class="input">
+                    <option>Proyectos</option>
+                    <option>Habilidades técnicas</option>
+                    <option>Experiencia</option>
+                    <option>Educación</option>
+                    <option>Certificaciones</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>¿Qué sección debería mejorar?</label>
+                <select name="mejorar" class="input">
+                    <option>Proyectos</option>
+                    <option>Experiencia</option>
+                    <option>Diseño</option>
+                    <option>Habilidades</option>
+                    <option>Información personal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Recomendación o comentario</label>
+                <textarea name="comentario" class="textarea" rows="5" placeholder="Escribe aquí tu opinión..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar opinión</button>
+            <a href="index.html" class="btn-volver">
+                Volver al CV
+            </a>
+        </form>
+        <div id="successMessage" style="display: none; color: #059669; background: #ecfdf5; padding: 15px; border-radius: 10px; margin-top: 20px; text-align: center; font-weight: bold;">
+            ¡Gracias! Tu opinión ha sido enviada con éxito.
+        </div>
+        <div id="errorMessage" style="display: none; color: #dc2626; background: #fef2f2; padding: 15px; border-radius: 10px; margin-top: 20px; text-align: center; font-weight: bold;">
+            Ups, hubo un error. Por favor, inténtalo de nuevo.
+        </div>
+    </section>
+</body>
+</html>

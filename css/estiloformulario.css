@@ -1,0 +1,145 @@
+/* ==================== estiloFormulario.css ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, #f8fafc, #e0f2fe);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: #1e2937;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 780px;
+    margin: 40px auto;
+    background: white;
+    padding: 50px 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+/*
+.form-container:hover {
+    transform: translateY(-5px);
+}
+*/
+.form-title {
+    font-size: 2.1rem;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #0f172a;
+}
+
+.section-title {
+    font-size: 1.35rem;
+    margin: 35px 0 20px;
+    color: #1e40af;
+    border-bottom: 3px solid #bfdbfe;
+    padding-bottom: 8px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1.05rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 14px;
+    background: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 30px 0;
+}
+
+/* Botón */
+.btn-enviar {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 18px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn-enviar:hover {
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.4);
+}
+.btn-volver{
+    display: inline-block;      /* hace que el link se comporte como botón */
+    text-decoration: none;      /* quita la raya del enlace */
+    text-align: center;
+    background: linear-gradient(135deg, #0fba0c, #14bd0b);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn-volver:hover{
+    background: linear-gradient(135deg, #0fba0c, #14bd0b);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.4);
+}
+/* Responsive */
+@media (max-width: 640px) {
+    .form-container {
+        padding: 30px 20px;
+        margin: 10px auto;
+    }
+    
+    .form-title {
+        font-size: 1.8rem;
+    }
+}
