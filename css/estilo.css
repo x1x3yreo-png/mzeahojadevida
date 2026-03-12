@@ -235,7 +235,12 @@ h2::after{
     color:#6366f1;
     transform:scale(1.2);
 }
-
+#sobre p{
+    text-align: center;
+}
+.recom-card {
+    text-align: center;          /* Centra TODO el texto dentro de la tarjeta */
+}
 /* FOOTER */
 footer{
     text-align:center;
