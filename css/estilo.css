@@ -73,9 +73,11 @@ nav a:hover{
     background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)), url('https://source.unsplash.com/random/1920x1080/?technology') center/cover no-repeat;
 }
 .hero img{
-    width:160px;
-    height:160px;
-    border-radius:50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: 50%;
     border:5px solid #6366f1;
     margin-bottom:25px;
     box-shadow: 0 10px 30px rgba(99,102,241,0.3);
