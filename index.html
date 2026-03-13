@@ -13,12 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <script>
-  setInterval(function() {
-      if (window.outerWidth - window.innerWidth > 160) {
-          alert("No inspecciones la página");
-          window.location.href = "https://google.com";
-      }
-  }, 1000);
+  document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+  });
+
 </script>
 <body>
 <!-- https://yt3.ggpht.com/yti/ANjgQV-TbMBT-NI-A6CFI1YOlNHz2Vl4WK170n8cFYwg7izNAA=s108-c-k-c0x00ffffff-no-rj Variable de icono -->
