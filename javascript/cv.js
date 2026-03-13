@@ -6,10 +6,10 @@ const iconoOriginal = icono ? icono.href : null;
 window.addEventListener("blur", () => {
     document.title = "¡No te vayas! 🥺";
     if (icono) {
-        icono.href = "../Imagenes/triste.png";
+        icono.href = "../imagenes/triste.jpg"; // Cambia a un icono de alerta (asegúrate de tener esta imagen)
     }
 });
-
+//probando la ruta
 // Cuando vuelve a la pestaña
 window.addEventListener("focus", () => {
     document.title = tituloOriginal;
